@@ -7,12 +7,11 @@ class Hospital {
   private String name;
   private int maxPatients;
   private String state;
-  private List<hospitalBlock> blocks;
+  private List<hospitalBlock> blocks = new ArrayList<>();
   public Hospital(String name,int maxPatient,String state) {
 	  this.name = name;
       this.maxPatients = maxPatient;
       this.state = state;
-      this.blocks = new ArrayList<>();
 }
   //setters and getters methods
   public String getName() {

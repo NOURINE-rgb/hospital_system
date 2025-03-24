@@ -1,4 +1,4 @@
-package hospital.gui;
+package hospital.classes;
 
 import java.awt.Color;
 import java.awt.Font;

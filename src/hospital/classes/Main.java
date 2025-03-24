@@ -23,9 +23,7 @@ public class Main {
           }
     }
 }
-
-
-//filter by block the patient
-//filter by type of patient the list
+// static list for adding patient and adding more functianlity with gpt
+// delete and see details of patients
+//filter by block and type
 // and search by name
-//edit the hospital info
