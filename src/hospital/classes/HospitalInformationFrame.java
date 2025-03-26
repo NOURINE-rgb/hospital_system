@@ -162,7 +162,6 @@ public class HospitalInformationFrame extends JFrame {
         stateLabel.setBounds(10, 148, 150, 30);
         stateLabel.setFont(AppTheme.buttonFont);
         stateLabel.setForeground(AppTheme.primaryColor);
-
         JLabel blockNameLabel = new JLabel("Block Name:");
         blockNameLabel.setBounds(474, 60, 150, 30);
         blockNameLabel.setFont(AppTheme.buttonFont);
@@ -248,6 +247,14 @@ public class HospitalInformationFrame extends JFrame {
         table.getTableHeader().setBackground(AppTheme.primaryColor);
         table.getTableHeader().setForeground(Color.WHITE);
         scrollPane.setBounds(10, 251, 445, 242);
+        // initilise the hospital info
+        Hospital hospital = HospitalRecordManagerFrame.getHospital();
+        if(hospital != null) {
+        	hospitalNameField.setText(hospital.getName());
+        	stateField.setText(hospital.getState());
+        	maxPatientsComboBox.setSelectedItem((int)hospital.getMaxPatients());
+        	displayBlocks();
+        }
         // Adding components to the frame
         getContentPane().add(hospitalNameLabel);
         getContentPane().add(hospitalNameField);

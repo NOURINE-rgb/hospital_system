@@ -232,24 +232,24 @@ public class NewPatientFrame extends JFrame {
         inPatientPanel.setLayout(null);
         inPatientPanel.setBackground(AppTheme.backgroundColor);
         JLabel roomNumberLabel = new JLabel("Room Number:");
-        roomNumberLabel.setBounds(0, 10, 150, 25);
+        roomNumberLabel.setBounds(0, 0, 150, 25);
         roomNumberField = new JTextField();
-        roomNumberField.setBounds(120, 10, 200, 25);
+        roomNumberField.setBounds(120, 0, 200, 25);
 
         JLabel admissionDateLabel = new JLabel("Admission Date:");
-        admissionDateLabel.setBounds(0, 40, 150, 25);
+        admissionDateLabel.setBounds(0, 25, 150, 25);
         admissionDateField = new JTextField();
         admissionDateField.setText("2025/01/01");
-        admissionDateField.setBounds(120, 40, 200, 25);
+        admissionDateField.setBounds(120, 25, 200, 25);
         JLabel dailyChargeLabel = new JLabel("Daily Charge:");
-        dailyChargeLabel.setBounds(0, 71, 150, 25);
+        dailyChargeLabel.setBounds(0, 50, 150, 25);
         dailyChargeField = new JTextField();
-        dailyChargeField.setBounds(120, 70, 200, 25);
+        dailyChargeField.setBounds(120, 50, 200, 25);
 
         JLabel numberOfDaysAdmittedLabel = new JLabel("Days Admitted:");
-        numberOfDaysAdmittedLabel.setBounds(0, 100, 150, 25);
+        numberOfDaysAdmittedLabel.setBounds(0, 75, 150, 25);
         numberOfDaysAdmittedField = new JTextField();
-        numberOfDaysAdmittedField.setBounds(120, 100, 200, 25);
+        numberOfDaysAdmittedField.setBounds(120, 75, 200, 25);
 
         inPatientPanel.add(roomNumberLabel);
         inPatientPanel.add(roomNumberField);
